@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>[MICCAI 2025] Dynamic-Aware Spatio-temporal Representation Learning for Dynamic MRI Reconstruction</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -43,6 +43,9 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -52,66 +55,56 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">DA-INR: Dynamic-Aware Spatio-temporal Representation Learning for Dynamic MRI Reconstruction</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://github.com/9B8DY6" target="_blank">Dayoung Baik</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  <a href="https://sites.google.com/view/jaejunyoo" target="_blank">Jaejun Yoo</a><sup>&dagger;</sup><sup>1</sup>,
+                  <!-- <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a> -->
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                      <sup>1</sup>Ulsan National Institute of Science and Technology (UNIST)<br>
+                      <span class="eql-cntrb"><small><sup>&dagger;</sup>Corresponding authors</small></span><br>
+                      <span><b>MICCAI 2025</b></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://www.arxiv.org/abs/2501.09049" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Paper (Soon)</span>
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/9B8DY6" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code (Soon)</span>
                   </a>
                 </span>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://www.arxiv.org/abs/2501.09049" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Arxiv</span>
                 </a>
               </span>
             </div>
@@ -124,11 +117,10 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -137,7 +129,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -148,7 +140,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Dynamic MRI reconstruction, one of inverse problems, has seen a surge by the use of deep learning techniques. Especially, the practical difficulty of obtaining ground truth data has led to the emergence of unsupervised learning approaches. A recent promising method among them is implicit neural representation (INR), which defines the data as a continuous function that maps coordinate values to the corresponding signal values. This allows for filling in missing information only with incomplete measurements and solving the inverse problem effectively. Nevertheless, previous works incorporating this method have faced drawbacks such as long optimization time and the need for extensive hyperparameter tuning. To address these issues, we propose Dynamic-Aware INR (DA-INR), an INR-based model for dynamic MRI reconstruction that captures the spatial and temporal continuity of dynamic MRI data in the image domain and explicitly incorporates the temporal redundancy of the data into the model structure. As a result, DA-INR outperforms other models in reconstruction quality even at extreme undersampling ratios while significantly reducing optimization time and requiring minimal hyperparameter tuning.
           </p>
         </div>
       </div>
@@ -157,36 +149,178 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Overall Pipeline</h2>
+        <figure class="image">
+          <img src="static/images/ours_methodv2.png" alt="MY ALT TEXT"/>
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+             <b>Overall pipeline of DA-INR.</b> A deformation network \( \Psi_t \) takes a spatio-temporal coordinate \( (x, y, t) \) as input to output deformation field \( \Delta \mathbf{x} = (\Delta x, \Delta y) \) based on a canonical space. A pretrained feature extractor extracts features from an undersampled data in the image domain. A canonical network \( \Psi_x \) takes the deformed coordinate \( \mathbf{x}' \) and the features \( \mathbf{f}' \) to predict \( t^{\text{th}} \) frame in the image domain, \( d_\theta \). These two models are optimized by L1 loss computation in the frequency domain with Non-uniform Fast Fourier Transform (NuFFT). "Sampling" means upscaling the coordinates or the features by nearest-neighborhood or bilinear interpolation. F.E and H.E mean Frequency Encoding and Hash Encoding.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Encoding Temporal Redundancy</h2>
+        <figure class="image">
+          <img src="static/images/encoding_temporal_redun.png" style="display: block; margin: 0 auto;max-width: 95%; height: auto;" alt="MY ALT TEXT"/>
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+             <b>Encoding Temporal Redundancy in DA-INR.</b> In DA-INR, the cells of the image in the canonical space plays a regularization role to those of all other frames. The purplish lines between frame-by-frame indicate that DA-INR is continuous in time, but does not merely represent dynamic MRI data as 3D mass like existing methods.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Qualitative Results</h2>
+
+        <!-- 🔹 첫 번째 행 소주제 -->
+        <!-- <div class="content has-text-centered mb-4">
+          <h3 class="title is-4">Results in \( (y-x) \) domain</h3>
+        </div> -->
+
+        <figure class="image">
+          <img src="static/images/cardiac_recon.png" style="display: block; margin: 0 auto;max-width: 88%; height: auto;" alt="MY ALT TEXT"/>
+          <figcaption class="has-text-centered mt-2">
+            <b>Qualitative Results in \( (y-x) \) domain</b> of \(AF=9.8\) in cardiac cine data reconstruction at diastole and systole.
+          </figcaption>
+        </figure>
+
+        <!-- 🔹 두 번째 행 소주제 -->
+        <!-- <div class="content has-text-centered mt-6 mb-4">
+          <h3 class="title is-4">Results in \( (x-t) \) domain</h3>
+        </div> -->
+
+        <figure class="image">
+          <img src="static/images/cardiac_recon_temp.png" style="display: block; margin: 0 auto;max-width: 88%; height: auto;" alt="Reconstruction 2">
+          <figcaption class="has-text-centered mt-2">
+            <b>Qualitative Results in \( (x-t) \) domain</b> of cardiac cine data reconstruction in various \(AF\)s.
+          </figcaption>
+        </figure>
+        
+        
+        <figure class="image">
+          <img src="static/images/liver.png" style="display: block; margin: 0 auto;max-width: 90%; height: auto;" alt="Reconstruction 33">
+          <figcaption class="has-text-centered mt-2">
+            <b>Qualitative results of DCE liver data</b> reconstruction with an undersampling ratio of 34 spokes per frame \( (AF=11.3) \). We visualize reconstruction at different contrast phases (left), and compare signal intensity flow for aorta (AO) and portal vein (PV) ROI (right).
+          </figcaption>
+        </figure>
+        <div class="content has-text-justified">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- ✅ 대주제 제목 -->
+    <div class="content has-text-centered mb-6">
+      <h2 class="title is-3">Spatio-temporal Interpolation Ability of DA-INR</h2>
+      <!-- <p class="subtitle is-5">Spatio-temporal Interpolation Ability of DA-INR</p> -->
+    </div>
+
+    <!-- 🔹 첫 번째 행 소주제 -->
+    <div class="content has-text-centered mb-4">
+      <h3 class="title is-4">Spatial Interpolation</h3>
+    </div>
+
+    <!-- <div class="columns">
+      <div class="column is-half">
+        <figure class="image">
+          <img src="static/images/spatial_interpolation_method.png" alt="Image 1">
+          <figcaption class="has-text-centered mt-2">Spatial Interpolation Framework.</figcaption>
+        </figure>
+      </div>
+      <div class="column is-half">
+        <figure class="image">
+          <img src="static/images/spa_int_result.png" alt="Image 2">
+          <figcaption class="has-text-centered mt-2">Qualitative results in spatial interpolation \( (\times 1.2, \times 1.5, \times 2) \) task at \(AF=9.8\).</figcaption>
+        </figure>
+      </div>
+    </div> -->
+    <figure class="image">
+      <img src="static/images/spa_int_result.png" style="display: block; margin: 0 auto;max-width: 86%; height: auto;" alt="MY ALT TEXT"/>
+      <figcaption class="has-text-centered mt-2">
+        Qualitative results in spatial interpolation \( (\times 1.2, \times 1.5, \times 2) \) task of cardiac cine data at \(AF=9.8\).
+      </figcaption>
+    </figure>
+
+    <!-- 🔹 두 번째 행 소주제 -->
+    <div class="content has-text-centered mt-6 mb-4">
+      <h3 class="title is-4">Temporal Interpolation</h3>
+    </div>
+
+    <!-- <div class="columns">
+      <div class="column is-half">
+        <figure class="image">
+          <img src="static/images/temporal_interpolation_method.png" alt="Image 3">
+          <figcaption class="has-text-centered mt-2">Temporal Interpolation Framework.</figcaption>
+        </figure>
+      </div>
+      <div class="column is-half">
+        <figure class="image">
+          <img src="static/images/temp_int_result.png" alt="Image 4">
+          <figcaption class="has-text-centered mt-2">Comprehensive results in temporal interpolation \( (\times 2, \times 3) \) task. (a), (b) Temporal interpolation results at \(AF=6.1\) for \( (\times2) \) and \( (\times3) \), respectively.</figcaption>
+        </figure>
+      </div>
+    </div> -->
+    <figure class="image">
+      <img src="static/images/temp_int_result.png" style="display: block; margin: 0 auto;max-width: 88%; height: auto;" alt="MY ALT TEXT"/>
+      <figcaption class="has-text-centered mt-2">
+        Comprehensive results in temporal interpolation \( (\times 2, \times 3) \) task of cardiac cine data. (a), (b) Temporal interpolation results at \(AF=6.1\) for \( (\times2) \) and \( (\times3) \), respectively. (c) The visual comparison of each method in the \( (x-t) \) domain.
+      </figcaption>
+    </figure>
+
+
+  </div>
+</section>
+
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+       <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
-      <div class="item">
+      <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
+          Second image description. -->
+        <!-- </h2>
+      </div> -->
+      <!-- <div class="item"> -->
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
-     <div class="item">
+     <div class="item"> -->
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2>
@@ -194,64 +328,64 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container"> -->
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <!-- <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
-          <div class="publication-video">
+          <div class="publication-video"> -->
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
+            <!-- <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
+        </div> -->
+        <!-- <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+            <!-- <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <!-- <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -260,7 +394,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +404,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -278,7 +412,15 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{baik2025dynamicawarespatiotemporalrepresentationlearning,
+      title={Dynamic-Aware Spatio-temporal Representation Learning for Dynamic MRI Reconstruction}, 
+      author={Dayoung Baik and Jaejun Yoo},
+      year={2025},
+      eprint={2501.09049},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      url={https://arxiv.org/abs/2501.09049}, 
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
