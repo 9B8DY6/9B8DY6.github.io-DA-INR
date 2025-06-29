@@ -291,6 +291,94 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- ✅ 대주제 제목 -->
+    <div class="content has-text-centered mb-6">
+      <h2 class="title is-3">Ablation Study of Pretrained Feature Extractor Types</h2>
+    </div>
+
+    <!-- 🔹 Table -->
+    <div class="table-container" style="overflow-x: auto;">
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth is-size-6 has-text-centered">
+        <thead>
+          <tr>
+            <th>Feature Extractor</th>
+            <th>PSNR (dB)</th>
+            <th>SSIM</th>
+            <th>GPU Memory Usage (GB)</th>
+            <th>Runtime (sec)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>w/o Encoder</td>
+            <td>29.59</td>
+            <td>0.8807</td>
+            <td>1.9</td>
+            <td>1332.80</td>
+          </tr>
+          <tr>
+            <td>EDSR [1]</td>
+            <td>29.53</td>
+            <td>0.8790</td>
+            <td>3.5</td>
+            <td>2826.45</td>
+          </tr>
+          <tr>
+            <td>RDN [2]</td>
+            <td>29.28</td>
+            <td>0.8750</td>
+            <td>12.0</td>
+            <td>6024.91</td>
+          </tr>
+          <tr>
+            <td>SwinIR [3]</td>
+            <td>29.34</td>
+            <td>0.8816</td>
+            <td>18.3</td>
+            <td>5889.91</td>
+          </tr>
+          <tr>
+            <td>MDSR [4] (Ours)</td>
+            <td>30.13</td>
+            <td>0.8835</td>
+            <td>3.5</td>
+            <td>1445.50</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 🔹 References -->
+    <div class="content mt-5" style="font-size: 0.9rem;">
+      <strong>References</strong>
+      <ol style="margin-left: 1.2em; margin-top: 0.5em;">
+        <li>
+          Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee. 
+          <i>Enhanced deep residual networks for single image super-resolution</i>. 
+          CoRR, abs/1707.02921, 2017.
+        </li>
+        <li>
+          Yulun Zhang, Yapeng Tian, Yu Kong, Bineng Zhong, and Yun Fu. 
+          <i>Residual dense network for image super-resolution</i>. 
+          CoRR, abs/1802.08797, 2018.
+        </li>
+        <li>
+          Jingyun Liang, Jiezhang Cao, Guolei Sun, Kai Zhang, Luc Van Gool, and Radu Timofte. 
+          <i>SwinIR: Image restoration using swin transformer</i>. 
+          In <i>Proceedings of the IEEE/CVF International Conference on Computer Vision</i>, pages 1833–1844, 2021.
+        </li>
+        <li>
+          Shangqi Gao and Xiahai Zhuang. Multi-scale deep neural networks for real image super-resolution. CoRR, abs/1904.10698, 2019.
+        </li>
+      </ol>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- Image carousel -->
 <!-- <section class="hero is-small">
